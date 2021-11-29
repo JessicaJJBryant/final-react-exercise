@@ -3,8 +3,8 @@
 // 1a.
 import './MCUShows.css';
 
-// 1b. and 5c.
-function MCUShows({dates}){
+// 1b., 5c., 6f., and 7d.
+function MCUShows({dates, indexTwo, numTwo}){
     // 1c.
     return (
         <div className='MCUShows'>
@@ -17,11 +17,13 @@ function MCUShows({dates}){
             <p>Loki: {dates.loki}</p>
             <p>What If...?: {dates.whatIf}</p>
             <p>Hawkeye: {dates.hawkeye}</p>
-            <button>RANDOM MCU CHARACTER</button>
+            {/* 6e. and 6f. */}
+            <button onClick={indexTwo}>RANDOM MCU CHARACTER</button>
+            {/* 7c. and 7d.. */}
+            <button onClick={numTwo}>NEXT MCU CHARACTER</button>
         </div>
     );
 }
 
 // 1d.
 export default MCUShows;
-// 6f. Have a random MCU character name display in the new h1 element after "Random MCU Character: " whenever the RANDOM MCU CHARACTER button is clicked.
