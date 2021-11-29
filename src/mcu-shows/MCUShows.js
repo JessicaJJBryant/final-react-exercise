@@ -17,9 +17,11 @@ function MCUShows({dates}){
             <p>Loki: {dates.loki}</p>
             <p>What If...?: {dates.whatIf}</p>
             <p>Hawkeye: {dates.hawkeye}</p>
+            <button>RANDOM MCU CHARACTER</button>
         </div>
     );
 }
 
 // 1d.
 export default MCUShows;
+// 6f. Have a random MCU character name display in the new h1 element after "Random MCU Character: " whenever the RANDOM MCU CHARACTER button is clicked.
