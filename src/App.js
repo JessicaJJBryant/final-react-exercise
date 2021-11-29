@@ -3,8 +3,8 @@
 // 2a.
 import MCUShows from "./mcu-shows/MCUShows";
 
-// Bonus 6a.
-import {useState} from 'react';
+// Bonus 6a. and 8a
+import {useState, useEffect} from 'react';
 
 // 5a.
 const releaseDates = {
@@ -33,6 +33,11 @@ function App() {
 
   // Bonus 7a.
   const [num, setNum] =useState(0);
+
+  // Bonus 8a. The function (1st argument) passed into the useEffect function/hook will run every time the state value ("num" in this example) that is passed into the array (2nd argument) is updated. NOTE: if nothing is passed in for a 2nd argument, then the function will run whenever any state values are updated.
+  useEffect(() => {
+    alert("The Next MCU Character has been displayed");
+  }, [num]);
 
   // BONUS 6f.
   function newIndex(){
